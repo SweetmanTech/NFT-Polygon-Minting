@@ -2,9 +2,9 @@ const hre = require("hardhat");
 
 async function main() {
   const NFT = await hre.ethers.getContractFactory("MyNFT");
-  const URI = "ipfs://QmbRmwSWgnnFNzGUccUo8Z1jsUdd855qe78BT63D7x1hy9"
-  const WALLET_ADDRESS = "0x6085923b251E60d54DA40EEcCF98380c37fE462C"
-  const CONTRACT_ADDRESS = "0x4410C72797C374F43133af1CaBf265Cf4ce043ec"
+  const URI = "ipfs://QmehXUjjjvDDMsobvK9ZXc9bjxPkp3ygCquAZnau6kYzvb"
+  const WALLET_ADDRESS = "0x1795BD61F0bfE0a3143A1509D07e28862a6C0a44"
+  const CONTRACT_ADDRESS = "0x02973401B0d003e813A562264939BBE70DBFdC87"
   const contract = NFT.attach(CONTRACT_ADDRESS);
   await contract.mint(WALLET_ADDRESS, URI);
   console.log("NFT minted:", contract);

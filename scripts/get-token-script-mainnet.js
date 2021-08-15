@@ -2,11 +2,11 @@ const hre = require("hardhat");
 
 async function main() {
   const NFT = await hre.ethers.getContractFactory("MyNFT");
-  const CONTRACT_ADDRESS = "0x4410C72797C374F43133af1CaBf265Cf4ce043ec"
+  const CONTRACT_ADDRESS = "0x02973401B0d003e813A562264939BBE70DBFdC87"
   const contract = NFT.attach(CONTRACT_ADDRESS);
   const owner = await contract.ownerOf(1);
   console.log("Owner:", owner);
-  const uri = await contract.tokenURI(3);
+  const uri = await contract.tokenURI(2);
   console.log("URI: ", uri);
 }
 
