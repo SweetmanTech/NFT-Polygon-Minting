@@ -1,2 +1,11 @@
-Deploy Script
+Project Setup
+1. `git clone git@github.com:SweetmanTech/NFT-Polygon-Minting.git`
+2. `npm i` (install npm packages)
+3. That's it!
+4. Next Step: Deploy your Smart Contract.
+
+Deploy your Smart Contract to Start Minting NFTs
+1. `npx hardhat run scripts/deploy-script.js --network matic`
+
+Mint an NFT
 1. `npx hardhat run scripts/mint-script-mainnet.js --network matic`
