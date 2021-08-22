@@ -6,7 +6,7 @@ const WALLET_ADDRESS = process.env.WALLET_ADDRESS;
 const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
 
 async function main() {
-  const NFT = await hre.ethers.getContractFactory("MyNFT");
+  const NFT = await hre.ethers.getContractFactory("SweetsNFT");
   const URI = "ipfs://QmXAwU9MRbysSnkK5PqogFLx97kW5rRGcMckMtCczoGYNj"
   const contract = NFT.attach(CONTRACT_ADDRESS);
   await contract.mint(WALLET_ADDRESS, URI);

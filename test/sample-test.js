@@ -2,7 +2,7 @@ const { expect } = require("chai");
 
 describe("NFT", function() {
   it("It should deploy the contract, mint a token, and resolve to the right URI", async function() {
-    const NFT = await ethers.getContractFactory("MyNFT");
+    const NFT = await ethers.getContractFactory("SweetsNFT");
     const nft = await NFT.deploy();
     const URI = "ipfs://QmWJBNeQAm9Rh4YaW8GFRnSgwa4dN889VKm9poc2DQPBkv";
     await nft.deployed();

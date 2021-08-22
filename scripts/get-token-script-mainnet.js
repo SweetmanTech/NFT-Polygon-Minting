@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const NFT = await hre.ethers.getContractFactory("MyNFT");
+  const NFT = await hre.ethers.getContractFactory("SweetsNFT");
   const CONTRACT_ADDRESS = "0x02973401B0d003e813A562264939BBE70DBFdC87"
   const contract = NFT.attach(CONTRACT_ADDRESS);
   const owner = await contract.ownerOf(1);
