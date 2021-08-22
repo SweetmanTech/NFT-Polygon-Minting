@@ -9,3 +9,5 @@ Deploy your Smart Contract to Start Minting NFTs
 
 Mint an NFT
 1. `npx hardhat run scripts/mint-script-mainnet.js --network matic`
+
+Credits: Special thanks to Justin Hunter and the Pinata team for this tutorial: https://medium.com/pinata/how-to-create-layer-2-nfts-with-polygon-and-ipfs-aef998ff8ef2
